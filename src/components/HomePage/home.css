@@ -23,13 +23,13 @@ body {
 }
 .item-name {
     position: absolute;
-    bottom: 8px;
-    right: 8px;
+    bottom: 9px;
+    right: 5px;
     background-color:coral;
     color: #000;
 }
 
-p {
+.main>p {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 4vw;
     color: coral;

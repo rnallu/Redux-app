@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+.cover-img {
+    width: 100%;
+    margin: 0;
+    height: 30vh;
+    object-fit: cover;
+}
+.img-container {
+    position: relative;
+}
+
+.img-link {
+    position:absolute;
+    top:5px;
+    left:5px;
+    padding:2px 5px 2px 5px;
+    background-color: blue;
+    color: azure;
+}
+
+.img-name {
+    position: absolute;
+    bottom: -11px;
+    right: 0px;
+    background-color: coral;
+}
+
+.album-container {
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+}
+
+.album-style {
+    font-size: 22px;
+    color: blueviolet;
+}
+
+.img-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
