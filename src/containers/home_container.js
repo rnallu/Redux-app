@@ -12,10 +12,21 @@ class HomeContainer extends React.Component {
  componentWillMount(){
         this.props.getArtistAll();
     }
+    getKeywords = (e) => {
+        const keywords =  e.target.value;
+        this.props.getArtistList(keywords);   
+    }
 
     render() {
         return (
+            <div>
+            <div className="main">
+                <p className="Title">Search Your Artist</p>
+                <input type="text" name="search" onChange={e=>this.getKeywords(e)}/>
+                <br/>
+            </div>
             <ArtistList artists={this.props.artists.artistList}/>
+            </div>
         )
                 
     }

@@ -5,11 +5,6 @@ const ArtistList = (props) => {
 
     return !props.artists ? null :
     (
-        
-   <div className="main">
-       <p className="Title">Search Your Artist</p>
-       <input type="text" name="search"/>
-       <br/>
     <div className="container">   
         {props.artists.map((val,i)=>(<div className="item-container" key={i}>
         <Link to={`/artist/${val.id}`}>
@@ -18,7 +13,6 @@ const ArtistList = (props) => {
         </Link>
         </div>))}
     </div>
-   </div>
    );
 }
 

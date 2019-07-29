@@ -17,3 +17,12 @@ export function getArtistAll(){
         payload:request
     }
 }
+
+export function getArtistDetail(id){
+    const request = axios.get(`${URL}/artists/${id}`).then(response=>response.data)
+
+    return {
+        type:'GET_ARTIST_DETAIL',
+        payload:request
+    }
+}
